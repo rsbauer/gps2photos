@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6616DE2325C4F86B00F9E42A /* GeoTagImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616DE2225C4F86B00F9E42A /* GeoTagImage.swift */; };
+		6652FB6725C5807100309F8F /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6652FB6625C5807100309F8F /* ProgressBarView.swift */; };
+		6652FB6C25C592BE00309F8F /* ProgressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6652FB6B25C592BE00309F8F /* ProgressModel.swift */; };
+		6652FB7225C5B1B700309F8F /* GeoTagStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6652FB7125C5B1B700309F8F /* GeoTagStateMachine.swift */; };
+		6652FB7C25C5B1D600309F8F /* GeoTagInitializeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6652FB7B25C5B1D600309F8F /* GeoTagInitializeState.swift */; };
+		6652FB8825C5B30900309F8F /* FindQRImageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6652FB8725C5B30900309F8F /* FindQRImageState.swift */; };
+		6652FBA625C636BC00309F8F /* GeoTagsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6652FBA525C636BC00309F8F /* GeoTagsState.swift */; };
+		6652FBB925C6596500309F8F /* CancelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6652FBB825C6596500309F8F /* CancelState.swift */; };
+		6669761E25C261BD00AE02AA /* FontAwesomeSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6669761D25C261BD00AE02AA /* FontAwesomeSwiftUI */; };
+		6669762325C265F300AE02AA /* CheckedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6669762225C265F300AE02AA /* CheckedItem.swift */; };
+		6669762C25C26CCB00AE02AA /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6669762B25C26CCB00AE02AA /* Shell.swift */; };
+		6669763125C2757800AE02AA /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6669763025C2757800AE02AA /* ImageProcessor.swift */; };
+		6669763625C2758400AE02AA /* CGImageSource+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6669763525C2758400AE02AA /* CGImageSource+Extensions.swift */; };
+		6669763B25C2758C00AE02AA /* QRImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6669763A25C2758C00AE02AA /* QRImage.swift */; };
+		6669764025C2759700AE02AA /* GeoTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6669763F25C2759700AE02AA /* GeoTag.swift */; };
+		666DD8C625C0E10E001D6680 /* FileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DD8C525C0E10E001D6680 /* FileItem.swift */; };
+		66CAEA5625BE627100E3DF09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAEA5525BE627100E3DF09 /* AppDelegate.swift */; };
+		66CAEA5825BE627100E3DF09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAEA5725BE627100E3DF09 /* ContentView.swift */; };
+		66CAEA5A25BE627200E3DF09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66CAEA5925BE627200E3DF09 /* Assets.xcassets */; };
+		66CAEA5D25BE627200E3DF09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66CAEA5C25BE627200E3DF09 /* Preview Assets.xcassets */; };
+		66CAEA6025BE627200E3DF09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CAEA5E25BE627200E3DF09 /* Main.storyboard */; };
+		66CAEA6C25BE627200E3DF09 /* gps2photosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAEA6B25BE627200E3DF09 /* gps2photosTests.swift */; };
+		66CAEA7725BE627200E3DF09 /* gps2photosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAEA7625BE627200E3DF09 /* gps2photosUITests.swift */; };
+		66CAEAB325BE6D6700E3DF09 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAEAB225BE6D6700E3DF09 /* PreferencesView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66CAEA6825BE627200E3DF09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66CAEA4A25BE627100E3DF09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66CAEA5125BE627100E3DF09;
+			remoteInfo = gps2photos;
+		};
+		66CAEA7325BE627200E3DF09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66CAEA4A25BE627100E3DF09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66CAEA5125BE627100E3DF09;
+			remoteInfo = gps2photos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6616DE2225C4F86B00F9E42A /* GeoTagImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTagImage.swift; sourceTree = "<group>"; };
+		6652FB6625C5807100309F8F /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		6652FB6B25C592BE00309F8F /* ProgressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressModel.swift; sourceTree = "<group>"; };
+		6652FB7125C5B1B700309F8F /* GeoTagStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTagStateMachine.swift; sourceTree = "<group>"; };
+		6652FB7B25C5B1D600309F8F /* GeoTagInitializeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTagInitializeState.swift; sourceTree = "<group>"; };
+		6652FB8725C5B30900309F8F /* FindQRImageState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindQRImageState.swift; sourceTree = "<group>"; };
+		6652FBA525C636BC00309F8F /* GeoTagsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTagsState.swift; sourceTree = "<group>"; };
+		6652FBB825C6596500309F8F /* CancelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelState.swift; sourceTree = "<group>"; };
+		6669762225C265F300AE02AA /* CheckedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedItem.swift; sourceTree = "<group>"; };
+		6669762B25C26CCB00AE02AA /* Shell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
+		6669763025C2757800AE02AA /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		6669763525C2758400AE02AA /* CGImageSource+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImageSource+Extensions.swift"; sourceTree = "<group>"; };
+		6669763A25C2758C00AE02AA /* QRImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRImage.swift; sourceTree = "<group>"; };
+		6669763F25C2759700AE02AA /* GeoTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoTag.swift; sourceTree = "<group>"; };
+		666DD8C525C0E10E001D6680 /* FileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileItem.swift; sourceTree = "<group>"; };
+		66CAEA5225BE627100E3DF09 /* gps2photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gps2photos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CAEA5525BE627100E3DF09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66CAEA5725BE627100E3DF09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		66CAEA5925BE627200E3DF09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66CAEA5C25BE627200E3DF09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		66CAEA5F25BE627200E3DF09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66CAEA6125BE627200E3DF09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66CAEA6225BE627200E3DF09 /* gps2photos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = gps2photos.entitlements; sourceTree = "<group>"; };
+		66CAEA6725BE627200E3DF09 /* gps2photosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gps2photosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CAEA6B25BE627200E3DF09 /* gps2photosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gps2photosTests.swift; sourceTree = "<group>"; };
+		66CAEA6D25BE627200E3DF09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66CAEA7225BE627200E3DF09 /* gps2photosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gps2photosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CAEA7625BE627200E3DF09 /* gps2photosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gps2photosUITests.swift; sourceTree = "<group>"; };
+		66CAEA7825BE627200E3DF09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66CAEAB225BE6D6700E3DF09 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66CAEA4F25BE627100E3DF09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6669761E25C261BD00AE02AA /* FontAwesomeSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CAEA6425BE627200E3DF09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CAEA6F25BE627200E3DF09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6652FB7025C5B1A700309F8F /* StateMachines */ = {
+			isa = PBXGroup;
+			children = (
+				6652FB7925C5B1BF00309F8F /* GeoTag */,
+			);
+			path = StateMachines;
+			sourceTree = "<group>";
+		};
+		6652FB7925C5B1BF00309F8F /* GeoTag */ = {
+			isa = PBXGroup;
+			children = (
+				6652FB8325C5B1FA00309F8F /* States */,
+				6652FB7125C5B1B700309F8F /* GeoTagStateMachine.swift */,
+			);
+			path = GeoTag;
+			sourceTree = "<group>";
+		};
+		6652FB8325C5B1FA00309F8F /* States */ = {
+			isa = PBXGroup;
+			children = (
+				6652FB7B25C5B1D600309F8F /* GeoTagInitializeState.swift */,
+				6652FB8725C5B30900309F8F /* FindQRImageState.swift */,
+				6652FBA525C636BC00309F8F /* GeoTagsState.swift */,
+				6652FBB825C6596500309F8F /* CancelState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		6669762A25C26CBF00AE02AA /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6669763025C2757800AE02AA /* ImageProcessor.swift */,
+				6669763525C2758400AE02AA /* CGImageSource+Extensions.swift */,
+				6669763F25C2759700AE02AA /* GeoTag.swift */,
+				6669762B25C26CCB00AE02AA /* Shell.swift */,
+				6616DE2225C4F86B00F9E42A /* GeoTagImage.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		66CAEA4925BE627100E3DF09 = {
+			isa = PBXGroup;
+			children = (
+				66CAEA5425BE627100E3DF09 /* gps2photos */,
+				66CAEA6A25BE627200E3DF09 /* gps2photosTests */,
+				66CAEA7525BE627200E3DF09 /* gps2photosUITests */,
+				66CAEA5325BE627100E3DF09 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66CAEA5325BE627100E3DF09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66CAEA5225BE627100E3DF09 /* gps2photos.app */,
+				66CAEA6725BE627200E3DF09 /* gps2photosTests.xctest */,
+				66CAEA7225BE627200E3DF09 /* gps2photosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66CAEA5425BE627100E3DF09 /* gps2photos */ = {
+			isa = PBXGroup;
+			children = (
+				66CAEA8825BE635F00E3DF09 /* App */,
+				66CAEA8725BE635500E3DF09 /* Resources */,
+				66CAEA5B25BE627200E3DF09 /* Preview Content */,
+			);
+			path = gps2photos;
+			sourceTree = "<group>";
+		};
+		66CAEA5B25BE627200E3DF09 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				66CAEA5C25BE627200E3DF09 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		66CAEA6A25BE627200E3DF09 /* gps2photosTests */ = {
+			isa = PBXGroup;
+			children = (
+				66CAEA6B25BE627200E3DF09 /* gps2photosTests.swift */,
+				66CAEA6D25BE627200E3DF09 /* Info.plist */,
+			);
+			path = gps2photosTests;
+			sourceTree = "<group>";
+		};
+		66CAEA7525BE627200E3DF09 /* gps2photosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66CAEA7625BE627200E3DF09 /* gps2photosUITests.swift */,
+				66CAEA7825BE627200E3DF09 /* Info.plist */,
+			);
+			path = gps2photosUITests;
+			sourceTree = "<group>";
+		};
+		66CAEA8725BE635500E3DF09 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				66CAEA5925BE627200E3DF09 /* Assets.xcassets */,
+				66CAEA6125BE627200E3DF09 /* Info.plist */,
+				66CAEA6225BE627200E3DF09 /* gps2photos.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		66CAEA8825BE635F00E3DF09 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6652FB7025C5B1A700309F8F /* StateMachines */,
+				6669762A25C26CBF00AE02AA /* Features */,
+				66CAEABD25BE740E00E3DF09 /* Models */,
+				66CAEAB125BE6D5200E3DF09 /* Views */,
+				66CAEA8925BE636900E3DF09 /* Storyboards */,
+				66CAEA5525BE627100E3DF09 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		66CAEA8925BE636900E3DF09 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				66CAEA5E25BE627200E3DF09 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		66CAEAB125BE6D5200E3DF09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6669762225C265F300AE02AA /* CheckedItem.swift */,
+				66CAEA5725BE627100E3DF09 /* ContentView.swift */,
+				66CAEAB225BE6D6700E3DF09 /* PreferencesView.swift */,
+				6652FB6625C5807100309F8F /* ProgressBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		66CAEABD25BE740E00E3DF09 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				666DD8C525C0E10E001D6680 /* FileItem.swift */,
+				6669763A25C2758C00AE02AA /* QRImage.swift */,
+				6652FB6B25C592BE00309F8F /* ProgressModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66CAEA5125BE627100E3DF09 /* gps2photos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66CAEA7B25BE627200E3DF09 /* Build configuration list for PBXNativeTarget "gps2photos" */;
+			buildPhases = (
+				66CAEA9325BE653B00E3DF09 /* Increment Build Number */,
+				66CAEA4E25BE627100E3DF09 /* Sources */,
+				66CAEA4F25BE627100E3DF09 /* Frameworks */,
+				66CAEA5025BE627100E3DF09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gps2photos;
+			packageProductDependencies = (
+				6669761D25C261BD00AE02AA /* FontAwesomeSwiftUI */,
+			);
+			productName = gps2photos;
+			productReference = 66CAEA5225BE627100E3DF09 /* gps2photos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66CAEA6625BE627200E3DF09 /* gps2photosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66CAEA7E25BE627200E3DF09 /* Build configuration list for PBXNativeTarget "gps2photosTests" */;
+			buildPhases = (
+				66CAEA6325BE627200E3DF09 /* Sources */,
+				66CAEA6425BE627200E3DF09 /* Frameworks */,
+				66CAEA6525BE627200E3DF09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66CAEA6925BE627200E3DF09 /* PBXTargetDependency */,
+			);
+			name = gps2photosTests;
+			productName = gps2photosTests;
+			productReference = 66CAEA6725BE627200E3DF09 /* gps2photosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		66CAEA7125BE627200E3DF09 /* gps2photosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66CAEA8125BE627200E3DF09 /* Build configuration list for PBXNativeTarget "gps2photosUITests" */;
+			buildPhases = (
+				66CAEA6E25BE627200E3DF09 /* Sources */,
+				66CAEA6F25BE627200E3DF09 /* Frameworks */,
+				66CAEA7025BE627200E3DF09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66CAEA7425BE627200E3DF09 /* PBXTargetDependency */,
+			);
+			name = gps2photosUITests;
+			productName = gps2photosUITests;
+			productReference = 66CAEA7225BE627200E3DF09 /* gps2photosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66CAEA4A25BE627100E3DF09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					66CAEA5125BE627100E3DF09 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					66CAEA6625BE627200E3DF09 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 66CAEA5125BE627100E3DF09;
+					};
+					66CAEA7125BE627200E3DF09 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 66CAEA5125BE627100E3DF09;
+					};
+				};
+			};
+			buildConfigurationList = 66CAEA4D25BE627100E3DF09 /* Build configuration list for PBXProject "gps2photos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66CAEA4925BE627100E3DF09;
+			packageReferences = (
+				6669761C25C261BD00AE02AA /* XCRemoteSwiftPackageReference "FontAwesomeSwiftUI" */,
+			);
+			productRefGroup = 66CAEA5325BE627100E3DF09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66CAEA5125BE627100E3DF09 /* gps2photos */,
+				66CAEA6625BE627200E3DF09 /* gps2photosTests */,
+				66CAEA7125BE627200E3DF09 /* gps2photosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66CAEA5025BE627100E3DF09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66CAEA6025BE627200E3DF09 /* Main.storyboard in Resources */,
+				66CAEA5D25BE627200E3DF09 /* Preview Assets.xcassets in Resources */,
+				66CAEA5A25BE627200E3DF09 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CAEA6525BE627200E3DF09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CAEA7025BE627200E3DF09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66CAEA9325BE653B00E3DF09 /* Increment Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build Number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# increment build number\nif [ $ENABLE_PREVIEWS == \"NO\" ]\nthen\n    infoPath=\"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n    buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${infoPath}\")\n    buildNumber=$(($buildNumber + 1))\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${infoPath}\"\nelse\n    echo \"Skipping the script because of preview mode\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66CAEA4E25BE627100E3DF09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6652FB6C25C592BE00309F8F /* ProgressModel.swift in Sources */,
+				6669763B25C2758C00AE02AA /* QRImage.swift in Sources */,
+				6652FB6725C5807100309F8F /* ProgressBarView.swift in Sources */,
+				6669762C25C26CCB00AE02AA /* Shell.swift in Sources */,
+				66CAEA5825BE627100E3DF09 /* ContentView.swift in Sources */,
+				6652FBB925C6596500309F8F /* CancelState.swift in Sources */,
+				6652FB7C25C5B1D600309F8F /* GeoTagInitializeState.swift in Sources */,
+				6669763625C2758400AE02AA /* CGImageSource+Extensions.swift in Sources */,
+				6669762325C265F300AE02AA /* CheckedItem.swift in Sources */,
+				66CAEAB325BE6D6700E3DF09 /* PreferencesView.swift in Sources */,
+				6652FB8825C5B30900309F8F /* FindQRImageState.swift in Sources */,
+				6652FBA625C636BC00309F8F /* GeoTagsState.swift in Sources */,
+				6652FB7225C5B1B700309F8F /* GeoTagStateMachine.swift in Sources */,
+				6669763125C2757800AE02AA /* ImageProcessor.swift in Sources */,
+				666DD8C625C0E10E001D6680 /* FileItem.swift in Sources */,
+				6616DE2325C4F86B00F9E42A /* GeoTagImage.swift in Sources */,
+				6669764025C2759700AE02AA /* GeoTag.swift in Sources */,
+				66CAEA5625BE627100E3DF09 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CAEA6325BE627200E3DF09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66CAEA6C25BE627200E3DF09 /* gps2photosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CAEA6E25BE627200E3DF09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66CAEA7725BE627200E3DF09 /* gps2photosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66CAEA6925BE627200E3DF09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66CAEA5125BE627100E3DF09 /* gps2photos */;
+			targetProxy = 66CAEA6825BE627200E3DF09 /* PBXContainerItemProxy */;
+		};
+		66CAEA7425BE627200E3DF09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66CAEA5125BE627100E3DF09 /* gps2photos */;
+			targetProxy = 66CAEA7325BE627200E3DF09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66CAEA5E25BE627200E3DF09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66CAEA5F25BE627200E3DF09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66CAEA7925BE627200E3DF09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66CAEA7A25BE627200E3DF09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		66CAEA7C25BE627200E3DF09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = gps2photos/Resources/gps2photos.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"gps2photos/Preview Content\"";
+				DEVELOPMENT_TEAM = HCG5E33E5U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = gps2photos/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsbauer.gps2photos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		66CAEA7D25BE627200E3DF09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = gps2photos/Resources/gps2photos.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"gps2photos/Preview Content\"";
+				DEVELOPMENT_TEAM = HCG5E33E5U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = gps2photos/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsbauer.gps2photos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		66CAEA7F25BE627200E3DF09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HCG5E33E5U;
+				INFOPLIST_FILE = gps2photosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsbauer.gps2photosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gps2photos.app/Contents/MacOS/gps2photos";
+			};
+			name = Debug;
+		};
+		66CAEA8025BE627200E3DF09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HCG5E33E5U;
+				INFOPLIST_FILE = gps2photosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsbauer.gps2photosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gps2photos.app/Contents/MacOS/gps2photos";
+			};
+			name = Release;
+		};
+		66CAEA8225BE627200E3DF09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HCG5E33E5U;
+				INFOPLIST_FILE = gps2photosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsbauer.gps2photosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = gps2photos;
+			};
+			name = Debug;
+		};
+		66CAEA8325BE627200E3DF09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HCG5E33E5U;
+				INFOPLIST_FILE = gps2photosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsbauer.gps2photosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = gps2photos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66CAEA4D25BE627100E3DF09 /* Build configuration list for PBXProject "gps2photos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66CAEA7925BE627200E3DF09 /* Debug */,
+				66CAEA7A25BE627200E3DF09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66CAEA7B25BE627200E3DF09 /* Build configuration list for PBXNativeTarget "gps2photos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66CAEA7C25BE627200E3DF09 /* Debug */,
+				66CAEA7D25BE627200E3DF09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66CAEA7E25BE627200E3DF09 /* Build configuration list for PBXNativeTarget "gps2photosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66CAEA7F25BE627200E3DF09 /* Debug */,
+				66CAEA8025BE627200E3DF09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66CAEA8125BE627200E3DF09 /* Build configuration list for PBXNativeTarget "gps2photosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66CAEA8225BE627200E3DF09 /* Debug */,
+				66CAEA8325BE627200E3DF09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6669761C25C261BD00AE02AA /* XCRemoteSwiftPackageReference "FontAwesomeSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onmyway133/FontAwesomeSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6669761D25C261BD00AE02AA /* FontAwesomeSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6669761C25C261BD00AE02AA /* XCRemoteSwiftPackageReference "FontAwesomeSwiftUI" */;
+			productName = FontAwesomeSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 66CAEA4A25BE627100E3DF09 /* Project object */;
+}
