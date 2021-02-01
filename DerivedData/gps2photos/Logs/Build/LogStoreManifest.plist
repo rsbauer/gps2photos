@@ -5,6 +5,75 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>AA99422B-DADA-4E5F-8EDA-D8BEED253824</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AA99422B-DADA-4E5F-8EDA-D8BEED253824.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>gps2photos project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>gps2photos</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build gps2photos</string>
+			<key>timeStartedRecording</key>
+			<real>633836758.58633995</real>
+			<key>timeStoppedRecording</key>
+			<real>633836760.34002805</real>
+			<key>title</key>
+			<string>Build gps2photos</string>
+			<key>uniqueIdentifier</key>
+			<string>AA99422B-DADA-4E5F-8EDA-D8BEED253824</string>
+		</dict>
+		<key>D7F98B72-4185-412F-85AD-E89F778DFF54</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D7F98B72-4185-412F-85AD-E89F778DFF54.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>gps2photos project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>gps2photos</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build gps2photos</string>
+			<key>timeStartedRecording</key>
+			<real>633835687.18294001</real>
+			<key>timeStoppedRecording</key>
+			<real>633835688.92214298</real>
+			<key>title</key>
+			<string>Build gps2photos</string>
+			<key>uniqueIdentifier</key>
+			<string>D7F98B72-4185-412F-85AD-E89F778DFF54</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

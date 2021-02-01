@@ -5,7 +5,92 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>300EE361-7697-41F1-8A76-24DF3371555C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
+			<key>fileName</key>
+			<string>300EE361-7697-41F1-8A76-24DF3371555C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>FontAwesomeSwiftUI-bwfrgynlqzwsewdpiqbxmceejepw</string>
+			<key>timeStartedRecording</key>
+			<real>633834081.73333704</real>
+			<key>timeStoppedRecording</key>
+			<real>633834082.039011</real>
+			<key>title</key>
+			<string>Build target FontAwesomeSwiftUI</string>
+			<key>uniqueIdentifier</key>
+			<string>300EE361-7697-41F1-8A76-24DF3371555C</string>
+		</dict>
+		<key>6DD8DCA9-447C-4FCD-9FEB-45292B46578B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
+			<key>fileName</key>
+			<string>6DD8DCA9-447C-4FCD-9FEB-45292B46578B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>FontAwesomeSwiftUI_FontAwesomeSwiftUI-bwfrgynlqzwsewdpiqbxmceejepw</string>
+			<key>timeStartedRecording</key>
+			<real>633834053.74172604</real>
+			<key>timeStoppedRecording</key>
+			<real>633834053.75604105</real>
+			<key>title</key>
+			<string>Build target FontAwesomeSwiftUI_FontAwesomeSwiftUI</string>
+			<key>uniqueIdentifier</key>
+			<string>6DD8DCA9-447C-4FCD-9FEB-45292B46578B</string>
+		</dict>
+		<key>A2F5E6ED-7ED6-4073-8F7D-0337717EC835</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>A2F5E6ED-7ED6-4073-8F7D-0337717EC835.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>gps2photos-gqlzvtlvpjcytzfroyyqmnwkppaa</string>
+			<key>timeStartedRecording</key>
+			<real>633836758.64012599</real>
+			<key>timeStoppedRecording</key>
+			<real>633836760.33512604</real>
+			<key>title</key>
+			<string>Build target gps2photos</string>
+			<key>uniqueIdentifier</key>
+			<string>A2F5E6ED-7ED6-4073-8F7D-0337717EC835</string>
+		</dict>
+	</dict>
 	<key>preserveOldLogs</key>
 	<true/>
 </dict>
