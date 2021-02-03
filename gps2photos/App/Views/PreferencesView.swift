@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PreferencesView: View {
     var body: some View {
-        Text("Hello, Preferences!")
+        Text("Preferences Coming Soon!")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }

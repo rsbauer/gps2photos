@@ -11,11 +11,11 @@ class GeoTagInitializeState: GKState, GeoTagStateType {
     public let stateDisplayName = "Initializing"
     
     override func didEnter(from previousState: GKState?) {
-        // TODO
+        // Nothing to do here
     }
     
     override func willExit(to nextState: GKState) {
-        // TODO
+        // Nothing to do here
     }
     
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {

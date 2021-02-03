@@ -9,8 +9,6 @@ import SwiftUI
 
 // from: https://www.simpleswiftguide.com/how-to-build-linear-progress-bar-in-swiftui/
 struct ProgressBar: View {
-//    var value: Float
-//    @Binding var progress: ProgressModel
     @ObservedObject var progressModel: ProgressModel
     
     var body: some View {

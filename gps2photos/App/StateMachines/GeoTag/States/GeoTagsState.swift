@@ -38,7 +38,7 @@ class GeoTagsState: GKState, GeoTagStateType {
     }
     
     override func willExit(to nextState: GKState) {
-        // TODO
+        // Nothing to do here
     }
     
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {
@@ -111,11 +111,7 @@ class GeoTagsState: GKState, GeoTagStateType {
         
         group.wait()
         
-        if result?.1 == 0 {
-            return true
-        }
-        
-        return false
+        return result?.1 == 0 ? true : false
     }
 }
 

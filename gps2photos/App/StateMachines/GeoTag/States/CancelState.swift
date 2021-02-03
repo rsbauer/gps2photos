@@ -17,7 +17,7 @@ class CancelState: GKState, GeoTagStateType {
     }
     
     override func willExit(to nextState: GKState) {
-        // TODO
+        // Nothing to do here
     }
     
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {

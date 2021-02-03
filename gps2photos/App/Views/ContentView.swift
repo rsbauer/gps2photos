@@ -171,12 +171,6 @@ struct ContentView: View {
                 let item = fileItems[index]
 
                 HStack {
-                    /*
-                    Image(nsImage: NSImage(contentsOf: item.url) ?? NSImage())
-                        .resizable()
-                        .frame(maxWidth: 50, maxHeight: 50)
-                        .scaledToFit()
-                    */
                     VStack(alignment: .leading) {
                         Text(item.url.lastPathComponent)
                             .font(.headline)
