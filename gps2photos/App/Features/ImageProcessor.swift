@@ -53,7 +53,7 @@ public class ImageProcessor {
         return imageSource(from: name)?.metadata()
     }
     
-    public func processImage(name: URL) -> QRImage? {
+    public func processImage(name: URL, keepOriginal: Bool) -> QRImage? {
         guard let image = diskImage(from: name) else {
             print("Unable to open image \(name)")
             return nil
@@ -77,7 +77,7 @@ public class ImageProcessor {
         let calendar = Calendar.current
         let diff = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: cameraDate, to: qrDate)
         
-        let exifCommand = "exiftool -overwrite_original \"-AllDates\(incrementDirection)=\(abs(diff.year ?? 0)):\(abs(diff.month ?? 0)):\(abs(diff.day ?? 0)) \(abs(diff.hour ?? 0)):\(abs(diff.minute ?? 0)):\(abs(diff.second ?? 0))\""
+        let exifCommand = "exiftool \(keepOriginal ? "" : "-overwrite_original") \"-AllDates\(incrementDirection)=\(abs(diff.year ?? 0)):\(abs(diff.month ?? 0)):\(abs(diff.day ?? 0)) \(abs(diff.hour ?? 0)):\(abs(diff.minute ?? 0)):\(abs(diff.second ?? 0))\""
         
         var start = cameraDate
         var end = qrDate
@@ -91,8 +91,8 @@ public class ImageProcessor {
         return QRImage(qrDate: qrDate, cameraDate: cameraDate, path: name, exifCommand: exifCommand, duration: interval.duration)
     }
     
-    public func adjustDates(using qrImage: QRImage, for path: URL) -> Bool {
-        let command = "\(qrImage.exifCommand) \"\(path.path)\""
+    public func adjustDates(using qrImage: QRImage, for path: URL, keepOriginal: Bool) -> Bool {
+        let command = "\(qrImage.exifCommand) \(keepOriginal ? "" : "-overwrite_original") \"\(path.path)\""
         print("Adjust date: \(command)")
         let result = Shell.run(command)
         return result.1 == 0

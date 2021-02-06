@@ -21,10 +21,12 @@ class FindQRImageState: GKState, GeoTagStateType {
     private let imageProcessor = ImageProcessor()
     private var qrImage: QRImage?
     private var cancelRequested = false
+    private var keepOriginal: Bool
     
-    init(list: [FileItem], delegate: FindQRImageStateProtocol?) {
+    init(list: [FileItem], delegate: FindQRImageStateProtocol?, keepOriginal: Bool) {
         self.list = list
         self.delegate = delegate
+        self.keepOriginal = keepOriginal
     }
     
     override func didEnter(from previousState: GKState?) {
@@ -54,7 +56,7 @@ class FindQRImageState: GKState, GeoTagStateType {
             guard let strongSelf = self else { return }
             var index = 0
             for item in list where foundQR == nil && strongSelf.cancelRequested == false {
-                if let qr = strongSelf.imageProcessor.processImage(name: item.url) {
+                if let qr = strongSelf.imageProcessor.processImage(name: item.url, keepOriginal: strongSelf.keepOriginal) {
                     foundQR = qr
                 }
                 

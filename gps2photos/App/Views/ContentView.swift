@@ -17,6 +17,8 @@ enum CriteriaToRun: Int {
 }
 
 struct ContentView: View {
+    static private let keepOriginalKey = "keepOriginal"
+    
     @State private var dragOver = false
     @State private var fileItems: [FileItem] = []
     @State private var selected: Set<Int> = Set()
@@ -28,6 +30,10 @@ struct ContentView: View {
     @State private var isProcessing = false
     @State private var hasExiftool = false
     @State private var hasSeenExiftoolAlert = false
+    @State private var keepOriginal = false
+    // meh, shouldn't have needed this, but a flag is needed so the keepOriginal value doesn't get reset
+    // to false each time the app starts
+    @State private var hasAppStarted = false
     
     private let imageProcessor = ImageProcessor()
     private let dateFormatter: DateFormatter = {
@@ -123,6 +129,16 @@ struct ContentView: View {
                 CheckedItemBool(text: "gps4camera QR code image", disableIcon: AwesomeIcon.question.rawValue, isEnabled: $hasQRImage)
                 CheckedItem(text: "gps4camera GPX file", flagValue: CriteriaToRun.hasGPXFile.rawValue, criteria: $criteriaMet)
                 CheckedItem(text: "ExifTool installed", flagValue: CriteriaToRun.hasExiftool.rawValue, disabledColor: .red, disableIcon: AwesomeIcon.times.rawValue, criteria: $criteriaMet)
+                
+                Toggle(isOn: $keepOriginal) {
+                    Text("Keep Originals")
+                }
+                .onReceive([self.keepOriginal].publisher.first(), perform: { value in
+                    if hasAppStarted {
+                        print("New value: \(value)")
+                        UserDefaults.standard.setValue(value, forKey: ContentView.keepOriginalKey)
+                    }
+                })
             }
             .padding()
             Spacer()
@@ -136,7 +152,7 @@ struct ContentView: View {
                     progress.taskName = "Cancelled"
                     isProcessing = false
                 } else {
-                    geoTagImage.processImages(list: fileItems, qrImage: qrImage, gpsFile: gpsFile)
+                    geoTagImage.processImages(list: fileItems, qrImage: qrImage, gpsFile: gpsFile, keepOriginal: keepOriginal)
                 }
             }, label: {
                 Text(isProcessing ? "Cancel" : "Geotag Images")
@@ -269,6 +285,9 @@ struct ContentView: View {
                 showAlert(message: "ExifTool is missing.", informative: "Install ExifTool from https://exiftool.org/ and restart gps2photos.")
             }
         }
+        
+        hasAppStarted = true
+        keepOriginal = UserDefaults.standard.bool(forKey: ContentView.keepOriginalKey)
     }
     
     private func showAlert(message: String, informative: String) {

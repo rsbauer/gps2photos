@@ -26,11 +26,13 @@ class GeoTagsState: GKState, GeoTagStateType {
     private let imageProcessor = ImageProcessor()
     private var qrImage: QRImage?
     private var cancelRequested = false
+    private let keepOriginal: Bool
 
-    init(list: [FileItem], gpsFile: URL, delegate: ApplyGeoTagsStateProtocol?) {
+    init(list: [FileItem], gpsFile: URL, delegate: ApplyGeoTagsStateProtocol?, keepOriginal: Bool) {
         self.list = list
         self.gpsFile = gpsFile
         self.delegate = delegate
+        self.keepOriginal = keepOriginal
     }
     
     override func didEnter(from previousState: GKState?) {
@@ -90,7 +92,7 @@ class GeoTagsState: GKState, GeoTagStateType {
             return false
         }
         
-        return imageProcessor.adjustDates(using: qr, for: path)
+        return imageProcessor.adjustDates(using: qr, for: path, keepOriginal: keepOriginal)
     }
     
     private func geoTagImage(for url: URL, gps: URL?) -> Bool {

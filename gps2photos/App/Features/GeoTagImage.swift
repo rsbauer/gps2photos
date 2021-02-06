@@ -12,21 +12,24 @@ public class GeoTagImage: ObservableObject {
     @Published public var progress = ProgressModel()
     @Published public var hasQRImage = false
     @Published public var isProcessing = false
+    
     private let imageProcessor = ImageProcessor()
     private var machine: GeoTagStateMachine?
+    private var keepOriginal = false
 
-    public func processImages(list: [FileItem], qrImage: QRImage?, gpsFile: URL?) {
+    public func processImages(list: [FileItem], qrImage: QRImage?, gpsFile: URL?, keepOriginal: Bool) {
         guard let gpsFile = gpsFile else {
             return
         }
-        
+
+        self.keepOriginal = keepOriginal
         progress.index = 0
         progress.totalTasks = list.count * 2
         
         machine = GeoTagStateMachine(states: [
             GeoTagInitializeState(),
-            FindQRImageState(list: list, delegate: self),
-            GeoTagsState(list: list, gpsFile: gpsFile, delegate: self),
+            FindQRImageState(list: list, delegate: self, keepOriginal: keepOriginal),
+            GeoTagsState(list: list, gpsFile: gpsFile, delegate: self, keepOriginal: keepOriginal),
             CancelState()
         ])
         
