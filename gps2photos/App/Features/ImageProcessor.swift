@@ -77,7 +77,7 @@ public class ImageProcessor {
         let calendar = Calendar.current
         let diff = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: cameraDate, to: qrDate)
         
-        let exifCommand = "exiftool \"-AllDates\(incrementDirection)=\(diff.year ?? 0):\(diff.month ?? 0):\(diff.day ?? 0) \(diff.hour ?? 0):\(diff.minute ?? 0):\(diff.second ?? 0)\""
+        let exifCommand = "exiftool -overwrite_original \"-AllDates\(incrementDirection)=\(abs(diff.year ?? 0)):\(abs(diff.month ?? 0)):\(abs(diff.day ?? 0)) \(abs(diff.hour ?? 0)):\(abs(diff.minute ?? 0)):\(abs(diff.second ?? 0))\""
         
         var start = cameraDate
         var end = qrDate

@@ -60,7 +60,7 @@ class GeoTagsState: GKState, GeoTagStateType {
             for item in fileItems where strongSelf.cancelRequested == false {
                 
                 if strongSelf.adjustDate(using: strongSelf.qrImage, for: item.url) {
-                    _ = strongSelf.geoTagImage(for: item.url, using: strongSelf.qrImage?.path)
+                    _ = strongSelf.geoTagImage(for: item.url, gps: strongSelf.gpsFile)
                 }
                 
                 DispatchQueue.main.async { [weak self] in
@@ -93,7 +93,7 @@ class GeoTagsState: GKState, GeoTagStateType {
         return imageProcessor.adjustDates(using: qr, for: path)
     }
     
-    private func geoTagImage(for url: URL, using gps: URL?) -> Bool {
+    private func geoTagImage(for url: URL, gps: URL?) -> Bool {
         guard let gpsFile = gps else {
             return false
         }

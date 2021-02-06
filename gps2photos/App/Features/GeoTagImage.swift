@@ -48,6 +48,7 @@ extension GeoTagImage: FindQRImageStateProtocol {
     
     func complete(qrImage: QRImage?) {
         if qrImage != nil {
+            progress.index = progress.totalTasks / 2
             machine?.enter(GeoTagsState.self)
             progress.taskName = "Found QR Code - GeoTagging Images"
             hasQRImage = true
