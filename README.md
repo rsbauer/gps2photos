@@ -39,7 +39,7 @@ Do NOT run the app more than once on the same photos.  Running it a second time 
 
 ### Screen Shots
 
-<img src="https://raw.githubusercontent.com/rsbauer/gps2photos/master/images/gps2photos-start.png" width="752"> 
+<img src="https://raw.githubusercontent.com/rsbauer/gps2photos/master/Images/gps2photos-start.png" width="752"> 
 
 ### Building - Getting Started
 
