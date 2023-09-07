@@ -279,6 +279,12 @@ struct ContentView: View {
     }
     
     private func appear() {
+        // Interesting.  In macos 10.14, appear() is getting called before exiftoolCheck() has had a chance to run.
+        // If hasExifTool is still false, try checking for exiftool.  
+        if !hasExiftool {
+            exiftoolCheck()
+        }
+
         if !hasExiftool && !hasSeenExiftoolAlert {
             hasSeenExiftoolAlert = true
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
